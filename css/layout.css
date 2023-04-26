@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+
+/* common */
+body{font-size: 14px;font-family: 'Noto Sans','Noto Sans KR',Helvetica,sans-serif;color: #333;}
+a{text-decoration: none;color: #333;}
+a:hover{text-decoration: none;color: #333;}
+h2{font-size: 40px;color: #000;  font-weight: 700;line-height: 50px;text-align: center;margin: 90px 0 90px 0;}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+ overflow: hidden;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #002849;
+  border-radius: 10px;
+}
+
+#wrap{}
+#header{display: block; position: fixed;z-index: 50; width: 100%;height: 98px;z-index: 10;}
+  .header_wrap{position: absolute;left: 0;width: 100%;height:98px;background: #fff;overflow: hidden;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.01);transition: height 0.3s linear 0s;}
+    .header_inner{position: relative; width: 100%;height: 98px;background: #fff;}
+#container{position: relative; width: 100%;margin: 0 auto;}
+  .content1{height: 100vh; margin: 0 auto ;  background: url(../images/bg_mv.png) no-repeat 0 0; background-size: cover;}
+  .content2{height: 100vh; margin: 0 auto ; background: #fff; background: url(../images/bg_mc02.jpg) no-repeat 0 0;background-size: cover;}
+  .content3{height: 100vh; margin: 0 auto ; background: url(../images/bg_mc03.jpg) no-repeat 0 0; background-size: cover;}
+  .content4{height: 100vh; margin: 0 auto ; background: url(../images/bg_mc04.jpg) no-repeat 0 0;background-size: cover;} 
+#footer{position: relative;background-color: #474a4f;}
+  .footer_inner{margin: 0 auto;}
+    
+
+  .spot{width: 100%;margin: 0 auto;}
+
+      .spot_inner{position: relative; width:100%; height: 400px;margin: 0 auto; box-sizing: border-box;}
+ 
+
+    /* layout */
+
+
+  
+ 
