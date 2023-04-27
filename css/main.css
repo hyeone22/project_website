@@ -452,7 +452,7 @@ transform: translateY(8px);animation: ani3 5s ease-in-out 0.5s  infinite;}
 .list{position: relative;left: 10%;}
 .list li{position: relative;width: 10%;height: 10%;margin: 300px 20px 0 0;
 border-radius: 10%;background-color: #fff;box-shadow: 10px 10px 20px #dcdcdc;}
-.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;}
+.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;color: #575757;}
 
 
 #container>.content1>.list{position: absolute;z-index: 10; top: 11%;}
@@ -769,7 +769,7 @@ transform: translateY(8px);animation: ani3 5s ease-in-out 0.5s  infinite;}
 .list{position: relative;left: 10%;}
 .list li{position: relative;width: 10%;height: 10%;margin: 300px 20px 0 0;
 border-radius: 10%;background-color: #fff;box-shadow: 10px 10px 20px #dcdcdc;}
-.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;}
+.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;color: #575757;}
 
 
 #container>.content1>.list{position: absolute;z-index: 10; top: 11%;}
@@ -1083,7 +1083,7 @@ transform: translateY(8px);animation: ani3 5s ease-in-out 0.5s  infinite;}
 .list li{position: relative;
 width: 10%;height: 10%;margin: 300px 20px 0 0;
 border-radius: 10%;background-color: #fff;box-shadow: 10px 10px 20px #dcdcdc;}
-.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;}
+.list li>a>p{font-size: 0.9rem;margin-bottom: 20%;color: #575757;}
 
 
 #container>.content1>.list{position: absolute;z-index: 10; top: 15%;}
@@ -1403,7 +1403,7 @@ transform: translateY(8px);animation: ani3 5s ease-in-out 0.5s  infinite;}
 .list li{position: relative;
 width: 10%;height: 10%;margin: 300px 20px 0 0;
 border-radius: 10%;background-color: #fff;box-shadow: 10px 10px 20px #dcdcdc;}
-.list li>a>p{font-size: 1.1rem;margin-bottom: 20%;}
+.list li>a>p{font-size: 1.1rem;margin-bottom: 20%;color: #575757;}
 
 
 
