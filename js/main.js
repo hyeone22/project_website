@@ -97,33 +97,29 @@ for(let k=0;k<lis.length;k++){
 }
 
 // 스크롤 이동
-for(let i=0;i<sections.length;i++){
-  sections[i].addEventListener('wheel', function(e){
-    if(e.deltaY < 0){
-      let prev = e.currentTarget.previousElementSibling.offsetTop;
+for(let i = 0; i < sections.length; i++) {
+  sections[i].addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const sectionHeight = sections[i].offsetHeight;
+    const sectionTop = sections[i].offsetTop;
+    const scrollDirection = e.deltaY > 0 ? 'down' : 'up';
+    
+    if (scrollDirection === 'down' && sectionTop + sectionHeight < document.body.scrollHeight) {
+      // Scroll to next section if there is one
       window.scroll({
-        top: prev,
-        left:0,
-        behavior:"smooth"
-      })
-      for(let i=0;i<sections.length;i++){
-        if(prev>=i*devHeight && prev<(i+1)*devHeight){
-          activation(i,lis);
-        }
-      }
-
-    }else if(e.deltaY > 0){
-      let next = e.currentTarget.nextElementSibling.offsetTop;
-      window.scroll({
-        top: next,
+        top: sectionTop + sectionHeight,
         left: 0,
-        behavior:"smooth"
-      })
-      for(let i=0;i<sections.length;i++){
-        if(next>=i*devHeight && next<(i+1)*devHeight){
-          activation(i,lis);
-        }
-      }
+        behavior: 'smooth'
+      });
+      activation(i + 1, lis);
+    } else if (scrollDirection === 'up' && sectionTop > 0) {
+      // Scroll to previous section if there is one
+      window.scroll({
+        top: sectionTop - sectionHeight,
+        left: 0,
+        behavior: 'smooth'
+      });
+      activation(i - 1, lis);
     }
   });
 }
