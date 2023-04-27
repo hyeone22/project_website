@@ -69,12 +69,20 @@ h2{font-size: 40px;color: #000;  font-weight: 700;padding: 90px 0; text-align: c
   }
   
   /* srollbar */
-  .scroll{display: none; position: fixed;z-index: 30; right: 30px;top: 50%;}
-  .scroll>ul>li>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;}
-  .scroll>ul>li.on>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;color: red;}
-  .scroll>ul>li>a>i{position: absolute;width: 6px;height: 6px;background-color: #ddd;border-radius: 50%;top: 50%;margin-left: 20px;}
-  .scroll>ul>li.on>a>i{position: absolute;width: 6px;height: 6px;background-color: red;border-radius: 50%;top: 50%;margin-left: 20px;}
-  .scroll>ul>li.on>a>i:after{content: "";position: absolute;width: 20px;height: 20px;border: 4px solid red;border-radius: 50%;margin-left: 20px;right: -11px;bottom: -11px;}
+  .scrollTop{display: block;z-index: 30;position: fixed;right: 80px;top: 50%;transform: translateY(-50%);}
+  .scrollTop.non{display: none;}
+  .scrollTop>li{position: relative;}
+  
+  .scrollTop>li>a{position:relative;transform: translateX(10px);display: inline-block;width: 6px;height: 6px;background: #a3a3a3;border-radius: 50%;text-align: right;margin-bottom: 15px;}
+  .scrollTop>li.on>a{background: #d41c1c;display: inline-block;width: 7px;height: 7px;}
+  
+  .scrollTop>li.on>a::after{content: "";display: inline-block;clear: both;position: absolute;right:-14px;top: -14px;width: 25px;height: 25px;border: 5px solid rgba(255, 0, 0, 0.5);border-radius: 50%;}
+  .scrollTop>li>a::after{content: "";display: none;clear: both;}
+  
+  /* 글씨 */
+  .scrollTop>li>span{display: none;position: absolute;right: 25px;
+    top: -10px;width: 200px;line-height: 30px;text-align: right;}
+  .scrollTop>li.on>span{display: inline-block;line-height: 30px;color: #d41c1c;}
   
   /* content1 */
   
@@ -390,13 +398,20 @@ animation: ani1 0.8s ease-in-out 0s alternate infinite;}
 }
 
 /* srollbar */
-.scroll{display: block; position: fixed;z-index: 30; right: 30px;top: 50%;}
-.scroll>ul>li>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;}
-.scroll>ul>li.on>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;color: red;}
-.scroll>ul>li>a>i{position: absolute;width: 6px;height: 6px;background-color: #ddd;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i{position: absolute;width: 6px;height: 6px;background-color: red;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i:after{content: "";position: absolute;width: 20px;height: 20px;border: 4px solid red;border-radius: 50%;margin-left: 20px;right: -11px;bottom: -11px;}
+.scrollTop{display: block;z-index: 30;position: fixed;right: 80px;top: 50%;transform: translateY(-50%);}
+.scrollTop.non{display: none;}
+.scrollTop>li{position: relative;}
 
+.scrollTop>li>a{position:relative;transform: translateX(10px);display: inline-block;width: 6px;height: 6px;background: #a3a3a3;border-radius: 50%;text-align: right;margin-bottom: 15px;}
+.scrollTop>li.on>a{background: #d41c1c;display: inline-block;width: 7px;height: 7px;}
+
+.scrollTop>li.on>a::after{content: "";display: inline-block;clear: both;position: absolute;right:-14px;top: -14px;width: 25px;height: 25px;border: 5px solid rgba(255, 0, 0, 0.5);border-radius: 50%;}
+.scrollTop>li>a::after{content: "";display: none;clear: both;}
+
+/* 글씨 */
+.scrollTop>li>span{display: none;position: absolute;right: 25px;
+  top: -10px;width: 200px;line-height: 30px;text-align: right;}
+.scrollTop>li.on>span{display: inline-block;line-height: 30px;color: #d41c1c;}
 /* content1 */
 
 /* #container>.content1:after{content: "";display: block;clear: both;} */
@@ -707,13 +722,20 @@ animation: ani1 0.8s ease-in-out 0s alternate infinite;}
 }
 
 /* srollbar */
-.scroll{display: block; position: fixed;z-index: 30; right: 30px;top: 50%;}
-.scroll>ul>li>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;}
-.scroll>ul>li.on>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;color: red;}
-.scroll>ul>li>a>i{position: absolute;width: 6px;height: 6px;background-color: #ddd;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i{position: absolute;width: 6px;height: 6px;background-color: red;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i:after{content: "";position: absolute;width: 20px;height: 20px;border: 4px solid red;border-radius: 50%;margin-left: 20px;right: -11px;bottom: -11px;}
+.scrollTop{display: block;z-index: 30;position: fixed;right: 80px;top: 50%;transform: translateY(-50%);}
+.scrollTop.non{display: none;}
+.scrollTop>li{position: relative;}
 
+.scrollTop>li>a{position:relative;transform: translateX(10px);display: inline-block;width: 6px;height: 6px;background: #a3a3a3;border-radius: 50%;text-align: right;margin-bottom: 15px;}
+.scrollTop>li.on>a{background: #d41c1c;display: inline-block;width: 7px;height: 7px;}
+
+.scrollTop>li.on>a::after{content: "";display: inline-block;clear: both;position: absolute;right:-14px;top: -14px;width: 25px;height: 25px;border: 5px solid rgba(255, 0, 0, 0.5);border-radius: 50%;}
+.scrollTop>li>a::after{content: "";display: none;clear: both;}
+
+/* 글씨 */
+.scrollTop>li>span{display: none;position: absolute;right: 25px;
+  top: -10px;width: 200px;line-height: 30px;text-align: right;}
+.scrollTop>li.on>span{display: inline-block;line-height: 30px;color: #d41c1c;}
 /* content1 */
 
 /* #container>.content1:after{content: "";display: block;clear: both;} */
@@ -1026,13 +1048,20 @@ animation: ani1 0.8s ease-in-out 0s alternate infinite;}
 }
 
 /* srollbar */
-.scroll{display: block; position: fixed;z-index: 30; right: 30px;top: 50%;}
-.scroll>ul>li>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;}
-.scroll>ul>li.on>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;color: red;}
-.scroll>ul>li>a>i{position: absolute;width: 6px;height: 6px;background-color: #ddd;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i{position: absolute;width: 6px;height: 6px;background-color: red;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i:after{content: "";position: absolute;width: 20px;height: 20px;border: 4px solid red;border-radius: 50%;margin-left: 20px;right: -11px;bottom: -11px;}
+.scrollTop{display: block;z-index: 30;position: fixed;right: 80px;top: 50%;transform: translateY(-50%);}
+.scrollTop.non{display: none;}
+.scrollTop>li{position: relative;}
 
+.scrollTop>li>a{position:relative;transform: translateX(10px);display: inline-block;width: 6px;height: 6px;background: #a3a3a3;border-radius: 50%;text-align: right;margin-bottom: 15px;}
+.scrollTop>li.on>a{background: #d41c1c;display: inline-block;width: 7px;height: 7px;}
+
+.scrollTop>li.on>a::after{content: "";display: inline-block;clear: both;position: absolute;right:-14px;top: -14px;width: 25px;height: 25px;border: 5px solid rgba(255, 0, 0, 0.5);border-radius: 50%;}
+.scrollTop>li>a::after{content: "";display: none;clear: both;}
+
+/* 글씨 */
+.scrollTop>li>span{display: none;position: absolute;right: 25px;
+  top: -10px;width: 200px;line-height: 30px;text-align: right;}
+.scrollTop>li.on>span{display: inline-block;line-height: 30px;color: #d41c1c;}
 /* content1 */
 
 /* #container>.content1:after{content: "";display: block;clear: both;} */
@@ -1344,14 +1373,20 @@ animation: ani1 0.8s ease-in-out 0s alternate infinite;}
 }
 
 /* srollbar */
-.scroll{display: block; position: fixed;z-index: 30; right: 30px;top: 50%;}
-.scroll>ul>li>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;}
-.scroll>ul>li.on>a{position: relative;display: block;text-align: right;margin: 20px 40px 0 0;color: red;}
-.scroll>ul>li>a>i{position: absolute;width: 6px;height: 6px;background-color: #ddd;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i{position: absolute;width: 6px;height: 6px;background-color: red;border-radius: 50%;top: 50%;margin-left: 20px;}
-.scroll>ul>li.on>a>i:after{content: "";position: absolute;width: 20px;height: 20px;border: 4px solid red;border-radius: 50%;margin-left: 20px;right: -11px;bottom: -11px;}
+.scrollTop{display: block;z-index: 30;position: fixed;right: 80px;top: 50%;transform: translateY(-50%);}
+.scrollTop.non{display: none;}
+.scrollTop>li{position: relative;}
 
+.scrollTop>li>a{position:relative;transform: translateX(10px);display: inline-block;width: 6px;height: 6px;background: #a3a3a3;border-radius: 50%;text-align: right;margin-bottom: 15px;}
+.scrollTop>li.on>a{background: #d41c1c;display: inline-block;width: 7px;height: 7px;}
 
+.scrollTop>li.on>a::after{content: "";display: inline-block;clear: both;position: absolute;right:-14px;top: -14px;width: 25px;height: 25px;border: 5px solid rgba(255, 0, 0, 0.5);border-radius: 50%;}
+.scrollTop>li>a::after{content: "";display: none;clear: both;}
+
+/* 글씨 */
+.scrollTop>li>span{display: none;position: absolute;right: 25px;
+  top: -10px;width: 200px;line-height: 30px;text-align: right;}
+.scrollTop>li.on>span{display: inline-block;line-height: 30px;color: #d41c1c;}
 
 /* content1 */
 .content{}
