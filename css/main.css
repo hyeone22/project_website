@@ -147,7 +147,7 @@ h2{font-size: 40px;color: #000;  font-weight: 700;padding: 90px 0; text-align: c
   #container>.content1>.list>ul>li:nth-of-type(2)>a>span{display: block; background: url(../images/icon_mc01_02.png) no-repeat 0 0;width: 50px;height: 54px;margin: 30px auto 15px;}
   #container>.content1>.list>ul>li:nth-of-type(3)>a>span{display: block; background: url(../images/icon_mc01_03.png) no-repeat 0 0;width: 50px;height: 54px;margin: 30px auto 15px;}
   #container>.content1>.list>ul>li:nth-of-type(4)>a>span{display: block; background: url(../images/icon_mc01_04.png) no-repeat 0 0;width: 50px;height: 54px;margin: 30px auto 15px;}
-  #container>.content1>.list>ul>li:nth-of-type(5)>a>span{display: block; background: url(../images/icon_mc01_05.png) no-repeat 0 0;width: 50px;height: 54px;margin: 30px auto 15px;} */ */
+  #container>.content1>.list>ul>li:nth-of-type(5)>a>span{display: block; background: url(../images/icon_mc01_05.png) no-repeat 0 0;width: 50px;height: 54px;margin: 30px auto 15px;} */
   
 
   .list>ul>li.on{background: hsl(202deg 92% 70%);color: #fff;}
@@ -517,7 +517,6 @@ text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png
 .content2>div>div:nth-of-type(2)>.plus{position: absolute;left: 40px;top: 170px; width: 30px;height: 30px;border-radius: 20px;
 text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;} 
 
-.content2>div:nth-of-type(3){}
 .content2>div>div:nth-of-type(3)>ul{display: flex;flex-direction: column; border-radius: 10px; box-shadow: 10px 10px 10px #ddd; }
 .content2>div>div:nth-of-type(3)>ul>li:first-child{width: 30vw;height: 17vh}
 .content2>div>div:nth-of-type(3)>ul>li>a{position: relative; display: inline-block; font-size: 26px;color: #000;font-weight: 700;padding: 15px;}
@@ -833,9 +832,9 @@ text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png
 .content2>div>div:nth-of-type(2){position: relative; background: url(../images/bg_mc02_02.jpg)no-repeat 50% 50%;width: 30vw;height: 42vh;border-radius: 10px;margin: 0 20px;}
 .content2>div>div:nth-of-type(2)>div{background: url(../images/icon_mc02_02.png)no-repeat 0 0;width: 104px;height: 108px;position: absolute;right: 30px;bottom: 30px;}
 .content2>div>div:nth-of-type(2)>.plus{position: absolute;left: 40px;top: 140px; width: 30px;height: 30px;border-radius: 20px;
-text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;} */
+text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;} 
 
-.content2>div:nth-of-type(3){}
+
 .content2>div>div:nth-of-type(3)>ul{display: flex;flex-direction: column; border-radius: 10px; box-shadow: 10px 10px 10px #ddd; }
 .content2>div>div:nth-of-type(3)>ul>li:first-child{width: 30vw;height: 19vh}
 .content2>div>div:nth-of-type(3)>ul>li>a{position: relative; display: inline-block; font-size: 20px;color: #000;font-weight: 700;line-height: 30px;padding: 40px;}
@@ -1151,7 +1150,7 @@ text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png
 .content2>div>div:nth-of-type(2){position: relative; background: url(../images/bg_mc02_02.jpg)no-repeat 50% 50%;width: 30vw;height: 42vh;border-radius: 30px;margin: 0 20px;}
 .content2>div>div:nth-of-type(2)>div{background: url(../images/icon_mc02_02.png)no-repeat 0 0;width: 104px;height: 108px;position: absolute;right: 30px;bottom: 30px;}
 .content2>div>div:nth-of-type(2)>.plus{position: absolute;left: 40px;top: 140px; width: 30px;height: 30px;border-radius: 20px;
-text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;} */
+text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;}
 
 
 .content2>div>div:nth-of-type(3)>ul{display: flex;flex-direction: column; border-radius: 10px; box-shadow: 10px 10px 10px #ddd; }
@@ -1473,7 +1472,7 @@ text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png
 .content2>div>div:nth-of-type(2)>.plus{display: block; position: absolute;left: 40px;top: 140px; width: 30px;height: 30px;border-radius: 20px;
 text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;}
 
-.content2>div:nth-of-type(3){}
+
 .content2>div>div:nth-of-type(3)>ul{display: flex;flex-direction: column; border-radius: 30px; box-shadow: 10px 10px 10px #ddd; }
 .content2>div>div:nth-of-type(3)>ul>li:first-child{width:25vw;height: 19vh;}
 .content2>div>div:nth-of-type(3)>ul>li:first-child>a{position: relative;display: inline-block; font-size: 26px;color: #000;font-weight: 700;line-height: 30px;padding: 40px;}
@@ -1483,7 +1482,7 @@ text-indent: -9999px;overflow: hidden;background:#fff url(../images/icon-btn.png
 .content2>div>div:nth-of-type(3)>ul:last-of-type{background:url(../images/icon_mc02_04.png)no-repeat 90% 50% #fff;}
 .content2>div>div:nth-of-type(3)>img{position: absolute;right: 50px;}
 
-.content2>div>div:nth-of-type(3)>ul li:last-child{}
+
 
 .content2>div>div:nth-of-type(3)>ul:first-of-type span{z-index: 1; display: block;position: absolute;left: 65%;top: 34%; width: 30px;height: 30px;border-radius: 20px;
 text-indent: -9999px;overflow: hidden;background:#ddd url(../images/icon-btn.png) no-repeat  0 0;background-position: -294px 5px;}
