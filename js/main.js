@@ -180,3 +180,76 @@ stopBtn.addEventListener("click",e=>{
   }
 })
 })
+let sections = document.querySelectorAll(".section");
+let devHeight;
+devHeight = window.innerHeight;
+
+window.addEventListener("resize",()=>{
+  devHeight = window.innerHeight;
+  console.log(devHeight);
+});
+
+for(let i=0;i<sections.length;i++){
+  sections[i].style.height = `${devHeight}px`;
+}
+
+// // 메뉴 선택시 스크롤 이동
+// let lis = document.querySelectorAll(".scrollTop>li");
+// let list = document.querySelectorAll(".scrollTop>li>a");
+
+// // 메뉴 클릭 시 보임
+// for(let k=0;k<lis.length;k++){
+//   lis[k].addEventListener("click", e => {
+//     e.preventDefault();
+//     window.scroll({
+//       top: k * devHeight,
+//       left:0,
+//       behavior: "smooth"
+//     })
+//   lis[k].addEventListener("mouseover", e => {
+//     lis[k].classList.add("on")
+//   })
+//   lis[k].addEventListener("mouseout", e => {
+//     lis[k].classList.remove("on")
+//   })
+//   })
+// }
+
+// // 스크롤 이동
+// for(let i=0;i<sections.length;i++){
+//   sections[i].addEventListener('wheel', function(e){
+//     if(e.deltaY < 0){
+//       let prev = e.currentTarget.previousElementSibling.offsetTop;
+//       window.scroll({
+//         top: prev,
+//         left:0,
+//         behavior:"smooth"
+//       })
+//       for(let i=0;i<sections.length;i++){
+//         if(prev>=i*devHeight && prev<(i+1)*devHeight){
+//           activation(i,lis);
+//         }
+//       }
+
+//     }else if(e.deltaY > 0){
+//       let next = e.currentTarget.nextElementSibling.offsetTop;
+//       window.scroll({
+//         top: next,
+//         left: 0,
+//         behavior:"smooth"
+//       })
+//       for(let i=0;i<sections.length;i++){
+//         if(next>=i*devHeight && next<(i+1)*devHeight){
+//           activation(i,lis);
+//         }
+//       }
+//     }
+//   });
+// }
+
+// let activation =(index,list)=>{
+//   for(let el of list){
+//     el.classList.remove("on");
+//   }
+//   list[index].classList.add("on");
+// }
