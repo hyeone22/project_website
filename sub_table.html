@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>한국거래소 코스닥 글로벌 | 편입종목 | 편입종목 리스트</title>
 <script src="https://kit.fontawesome.com/b3ce958290.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/import.css" />
 <link rel="stylesheet" href="css/sub.css"/>
-<link rel="stylesheet" href="css/sub2.css"/>
 <script defer src="js/sub.js"></script>
 
 </head>
@@ -22,101 +22,6 @@
   <!--header  -->
   <div id="header">
     <!-- header_wrap -->
-    <div class="header_wrap">
-    <!-- header_inner -->
-    <div class="header_inner">
-    <!-- 로고 -->
-    <h1 class="logo"><a href="index.html">코스닥</a></h1>
-    <!-- 주메뉴 -->
-    <nav class="gnb">
-      <h2 class="blind">주메뉴</h2>
-      <ul>
-        <li><a href="#">코스닥글로벌 소개</a>
-          <div>
-            <ul>
-              <li><a href="#">세그먼트 제도</a></li>
-              <li><a href="#">운영 및 관리제도</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>    
-          </div>
-        </li>
-    
-        <li><a href="#">편입종목</a>
-          <div>
-            <ul>
-              <li><a href="#">편입종목 리스트</a></li>
-              <li><a href="#">ESG 등급</a></li>
-              <li><a href="#">공시</a>
-              <ul>
-                <li><a href="#">오늘의 공시</a></li>
-                <li><a href="#">공시 상세검색</a></li>
-              </ul>
-              </li>
-              <li><a href="#">기업분석보고서</a>
-              <ul>
-                <li><a href="#">애널리스트</a></li>
-                <li><a href="#">분석보고서</a></li>
-                <li><a href="#">기술분석보고서</a></li>
-              </ul>
-              </li>
-              <li><a href="#">IR자료</a></li>
-            </ul>  
-            </div>
-        </li>
-     
-        <li><a href="#">연계상품</a>
-          <div>
-            <ul>
-              <li><a href="#">세그먼트 지수</a></li>
-              <li><a href="#">ETF 등 연계상품</a></li>
-            </ul>
-          </div>  
-        </li>
-      
-        <li><a href="#">통계</a>
-          <div>
-            <ul>
-              <li><a href="#">한눈에 보는 코스닥 글로벌</a>
-              <ul>
-                <li><a href="#">코스닥 대비 상장</a></li>
-                <li><a href="#">거래현황</a></li>
-                <li><a href="#">코스닥 대비</a></li>
-                <li><a href="#">업종별 현황</a></li>
-              </ul>
-              </li>
-              <li><a href="#">전종목 시세</a></li>
-              <li><a href="#">개별종목 시세</a></li>
-              <li><a href="#">투자자별 거래현황</a></li>
-              <li><a href="#">투자자별 거래현황(개별종목)</a></li>
-              <li><a href="#">순위정보</a>
-              <ul>
-                <li><a href="#">주가등락률</a></li>
-                <li><a href="#">거래규모</a></li>
-                <li><a href="#">시가총액</a></li>
-                <li><a href="#">외국인보유</a></li>
-                <li><a href="#">투자자별 순매수</a></li>
-              </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-     
-        <li><a href="#">참여마당</a>
-          <div>
-            <ul>
-              <li><a href="#">새소식</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">고객의 소리</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!-- //주메뉴 -->
-    
-    </div>
-    <!-- //header_inner -->
-    </div>
     <!-- //header_wrap -->
     </div>
     <!-- //header -->
@@ -449,27 +354,23 @@
 <!-- /#container -->
 <!-- footer -->
 <div id="footer">
-  <ul>
-    <li><a href="#">개인정보처리방침</a></li>
-    <li><a href="#">법적고시</a></li>
-  </ul>
-<!-- footer_inner -->
-<div class="footer_inner">
-  <div class="footer_inner2">
-  <span>한국거래소로고</span>
-  <address>
-    본사 : 48400 부산광역시 남구 문현금융로 40(문현동) TEL : 051-662-2000 사업자 등록번호 : 602-81-35420 금융서비스업 대표자 : 손병두</br>
-    서울 : 07329 서울특별시 영등포구 여의나루로 76(여의도동) TEL : 1577-0088 / 02-3774-9000 / 통신판매신고 부산남구 .0036호
-  </address>
-</div>
-  <p>
-    COPYRIGHT©2015 KOREA EXCHANGE ALL RIGHTS RESERVED. WEBMASTER@KRX.CO.KR
-  </p>
-</div>
+
 <!-- footer_inner -->
 </div>
 <!-- //footer -->
 </div>
 <!-- //wrap -->
+<script>
+  async function fetchHtmlAsText(url) {
+    const response = await fetch(url);
+    return await response.text();
+  }
+  
+  async function importPage(target) {
+    document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+  }
+  importPage('header');
+  importPage('footer');  
+  </script>
 </body>
 </html>

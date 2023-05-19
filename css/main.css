@@ -109,7 +109,7 @@ h2{font-size: 40px;color: #000;  font-weight: 700;padding: 90px 0; text-align: c
   
   } 
   
-  .content1>.images>ul:hover>li:nth-of-type(2){animation: ani5 3s ease-in-out 0s infinite;}
+  .content1>.images>ul:hover>li:nth-of-type(2){animation: ani5 2s ease-in-out 0s alternate infinite;}
   
   @keyframes ani5 {
   0%{background-position-x: 0px;}
@@ -125,9 +125,10 @@ h2{font-size: 40px;color: #000;  font-weight: 700;padding: 90px 0; text-align: c
   border-bottom: 2px solid red;width: 116px;margin-left: -8px;overflow: hidden;
   transform: translateY(8px);animation: ani3 5s ease-in-out 0.5s  infinite;}
   .loding>ul>li:nth-child(3)>ul{display: flex;flex-direction: row;}
-  .loding>ul>li:nth-child(3)>ul>li:nth-child(2){display: none;}
-  .loding>ul>li:nth-child(3)>ul>li a{text-indent: -9999px}
+  .loding>ul>li:nth-child(3)>ul>li:nth-child(2){}
+  .loding>ul>li:nth-child(3)>ul>li a{}
   .loding>ul>li:nth-child(3)>ul>li a i{}
+  .loading_play{display: none;}
 
   @keyframes ani3 {
   0%{width: 5px;}
